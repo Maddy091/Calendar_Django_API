@@ -5,6 +5,14 @@ from google.oauth2.credentials import Credentials
 from django.conf import settings
 from django.http import HttpResponseRedirect
 from django.views import View
+# from django.contrib.auth.views import login
+
+# def my_view(request):
+#     # ...
+#     login(request, user)
+#     # ...
+#     return redirect('oauth2/callback')
+
 
 class GoogleCalendarInitView(View):
     def get(self, request):
@@ -16,6 +24,7 @@ class GoogleCalendarInitView(View):
             access_type='offline',
             include_granted_scopes='true'
         )
+        print(authorization_url)
         request.session['google_auth_state'] = state
         return HttpResponseRedirect(authorization_url)
 

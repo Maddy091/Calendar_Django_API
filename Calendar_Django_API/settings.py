@@ -17,7 +17,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    # Add your app name here
     'My_Calendar_API',
 ]
 
@@ -67,10 +66,11 @@ CORS_ORIGIN_ALLOW_ALL = True
 GOOGLE_CLIENT_SECRET_FILE = 'C:/Users/User/Calendar_Django_API/client_secret.json'
 # settings.py
 
-GOOGLE_REDIRECT_URI = 'http://127.0.0.1:8000/rest/v1/calendar/redirect/'
-GOOGLE_REDIRECT_URI = 'http://127.0.0.1:8000/rest/v1/calendar/init/'
-GOOGLE_REDIRECT_URI = 'http://localhost:8000/rest/v1/calendar/redirect/'
-GOOGLE_REDIRECT_URI = 'http://localhost:8000/rest/v1/calendar/init/'
+# GOOGLE_REDIRECT_URI = 'http://127.0.0.1:8000/rest/v1/calendar/redirect/'
+# GOOGLE_REDIRECT_URI = 'http://127.0.0.1:8000/rest/v1/calendar/init/'
+# GOOGLE_REDIRECT_URI = 'http://localhost:8000/rest/v1/calendar/redirect/'
+# GOOGLE_REDIRECT_URI = 'http://localhost:8000/rest/v1/calendar/init/'
+OAUTH2_REDIRECT_URI = 'http://localhost:8000/oauth2/callback'
 
 # Rest of your settings...
 
