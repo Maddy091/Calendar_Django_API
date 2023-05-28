@@ -63,14 +63,14 @@ DATABASES = {
 CORS_ORIGIN_ALLOW_ALL = True
 
 # Google OAuth2 configuration
-GOOGLE_CLIENT_SECRET_FILE = 'C:/Users/User/Calendar_Django_API/client_secret.json'
+GOOGLE_CLIENT_SECRET_FILE = 'C:/Users/User/Calendar_Django_API/credentials.json'
 # settings.py
 
-# GOOGLE_REDIRECT_URI = 'http://127.0.0.1:8000/rest/v1/calendar/redirect/'
-# GOOGLE_REDIRECT_URI = 'http://127.0.0.1:8000/rest/v1/calendar/init/'
-# GOOGLE_REDIRECT_URI = 'http://localhost:8000/rest/v1/calendar/redirect/'
-# GOOGLE_REDIRECT_URI = 'http://localhost:8000/rest/v1/calendar/init/'
-OAUTH2_REDIRECT_URI = 'http://localhost:8000/oauth2/callback'
+GOOGLE_REDIRECT_URI = 'http://127.0.0.1:8000/rest/v1/calendar/redirect/'
+GOOGLE_REDIRECT_URI = 'http://127.0.0.1:8000/rest/v1/calendar/init/'
+GOOGLE_REDIRECT_URI = 'http://localhost:8000/rest/v1/calendar/redirect/'
+GOOGLE_REDIRECT_URI = 'http://localhost:8000/rest/v1/calendar/init/'
+OAUTH2_REDIRECT_URI = 'http://localhost:8000/oauth2'
 
 # Rest of your settings...
 
